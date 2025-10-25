@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ConcentrationLevel {
+  LOW
+  MEDIUM
+  HIGH
+}
+
+enum SampleStatus {
+  OK
+  ALERT
+}
+
+model Sample {
+  id                 Int                @id @default(autoincrement())
+  rawDate            String
+  capturedAt         DateTime?
+  microplasticCount  Int?
+  concentrationLevel ConcentrationLevel?
+  pH                 Float?
+  turbidity          Float?
+  sizeOrVolume       Float?
+  status             SampleStatus?
+  createdAt          DateTime           @default(now())
+}
