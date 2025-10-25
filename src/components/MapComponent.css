@@ -1,0 +1,135 @@
+.map-container {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #E5E7EB;
+}
+
+.custom-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.popup-content {
+  min-width: 200px;
+}
+
+.popup-title {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.popup-details p {
+  margin: 6px 0;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.intensity-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-left: 6px;
+}
+
+.intensity-high {
+  background-color: #FEE2E2;
+  color: #DC2626;
+}
+
+.intensity-medium {
+  background-color: #FEF3C7;
+  color: #D97706;
+}
+
+.intensity-low {
+  background-color: #D1FAE5;
+  color: #059669;
+}
+
+.map-legend {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E5E7EB;
+  z-index: 1000;
+  min-width: 150px;
+}
+
+.map-legend h4 {
+  margin: 0 0 12px 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.75rem;
+  color: #6B7280;
+}
+
+.legend-item:last-child {
+  margin-bottom: 0;
+}
+
+.legend-marker {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.supply-high {
+  background-color: #10B981;
+}
+
+.supply-medium {
+  background-color: #34D399;
+}
+
+.supply-low {
+  background-color: #6EE7B7;
+}
+
+.demand-high {
+  background-color: #EF4444;
+}
+
+.demand-medium {
+  background-color: #F87171;
+}
+
+.demand-low {
+  background-color: #FCA5A5;
+}
+
+@media (max-width: 768px) {
+  .map-legend {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 16px;
+    width: 100%;
+  }
+  
+  .map-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+

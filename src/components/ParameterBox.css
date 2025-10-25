@@ -1,0 +1,74 @@
+.parameter-box {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #E5E7EB;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.parameter-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.parameter-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.parameter-box-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+}
+
+.parameter-box-trend {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.parameter-box-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.parameter-box-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.parameter-box-subtitle {
+  font-size: 0.875rem;
+  color: #6B7280;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .parameter-box {
+    padding: 20px;
+  }
+  
+  .parameter-box-title {
+    font-size: 0.9rem;
+  }
+  
+  .parameter-box-value {
+    font-size: 1.5rem;
+  }
+  
+  .parameter-box-subtitle {
+    font-size: 0.8rem;
+  }
+}
+

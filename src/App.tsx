@@ -1,6 +1,10 @@
 import { useAuth } from '@clerk/clerk-react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
 import LandingPage from './components/LandingPage';
-import CCTVDashboard from './components/CCTVDashboard';
+import ValueChainDashboard from './pages/ValueChainDashboard';
+import GlobalMarketplace from './pages/GlobalMarketplace';
+import './App.css';
 
 function App() {
   const { isLoaded, isSignedIn } = useAuth();
@@ -13,11 +17,11 @@ function App() {
         justifyContent: 'center',
         alignItems: 'center',
         height: '100vh',
-        background: '#0b1422',
-        color: '#dbe5ff',
+        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        color: 'white',
         fontSize: '18px'
       }}>
-        Loading...
+        Loading Oilseed Byproducts Platform...
       </div>
     );
   }
@@ -27,8 +31,20 @@ function App() {
     return <LandingPage />;
   }
 
-  // If signed in, show dashboard
-  return <CCTVDashboard />;
+  // If signed in, show the main application with routing
+  return (
+    <Router>
+      <div className="app">
+        <NavBar />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<ValueChainDashboard />} />
+            <Route path="/marketplace" element={<GlobalMarketplace />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
