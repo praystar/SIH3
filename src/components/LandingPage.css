@@ -1,7 +1,7 @@
 .landing-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, #7A8B8E 0%, #94A1A3 100%);
+  color: black;
   overflow-y: auto;
   overflow-x: hidden;
 }

@@ -25,7 +25,7 @@
 .parameter-box-title {
   font-size: 1rem;
   font-weight: 600;
-  color: #374151;
+  color: black;
   margin: 0;
 }
 
@@ -46,11 +46,12 @@
   font-weight: 700;
   margin-bottom: 8px;
   line-height: 1.2;
+  color: black;
 }
 
 .parameter-box-subtitle {
   font-size: 0.875rem;
-  color: #6B7280;
+  color: black;
   line-height: 1.4;
 }
 

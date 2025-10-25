@@ -17,8 +17,8 @@ function App() {
         justifyContent: 'center',
         alignItems: 'center',
         height: '100vh',
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        color: 'white',
+        background: 'linear-gradient(135deg, #7A8B8E 0%, #94A1A3 100%)',
+        color: 'black',
         fontSize: '18px'
       }}>
         Loading Oilseed Byproducts Platform...

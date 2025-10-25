@@ -65,36 +65,12 @@ const ValueChainDashboard: React.FC = () => {
         <div className="kpi-section">
           <div className="section-header">
             <h2>Key Performance Indicators</h2>
-            <p>Real-time metrics for oilseed by-products market</p>
+            <p>Real-time metrics for oilseed byproducts market</p>
           </div>
           <div className="kpi-grid">
             {kpis.map(kpi => (
               <ParameterBox key={kpi.id} kpi={kpi} />
             ))}
-          </div>
-        </div>
-
-        {/* Market Insights Section */}
-        <div className="insights-section">
-          <div className="section-header">
-            <h2>Market Insights</h2>
-          </div>
-          <div className="insights-grid">
-            <div className="insight-card">
-              <div className="insight-icon">📊</div>
-              <h3>Market Trends</h3>
-              <p>Soybean meal continues to dominate global trade with increasing demand from Asia-Pacific region.</p>
-            </div>
-            <div className="insight-card">
-              <div className="insight-icon">🌍</div>
-              <h3>Regional Analysis</h3>
-              <p>North America shows highest surplus while Europe faces significant shortages in specialty meals.</p>
-            </div>
-            <div className="insight-card">
-              <div className="insight-icon">💰</div>
-              <h3>Price Dynamics</h3>
-              <p>Price volatility remains moderate with premium products showing upward trends.</p>
-            </div>
           </div>
         </div>
       </div>

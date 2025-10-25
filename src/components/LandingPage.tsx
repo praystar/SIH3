@@ -42,12 +42,12 @@ const LandingPage: React.FC = () => {
           <div className="auth-info">
             <h3>Why Join Our Platform?</h3>
             <ul className="benefits-list">
-              <li>🌍 Access to global oilseed byproducts market</li>
-              <li>📈 Real-time market data and analytics</li>
-              <li>🤝 Connect with verified suppliers worldwide</li>
-              <li>📊 Track supply/demand trends</li>
-              <li>💼 Professional trading tools</li>
-              <li>🔒 Secure and reliable platform</li>
+            <li>Tap into the entire global oilseed byproducts market.</li>
+<li>Access real-time market intelligence and analytics.</li>
+<li>Forge direct relationships with verified suppliers worldwide.</li>
+<li>Get an edge by tracking crucial supply/demand trends.</li>
+<li>Equip yourself with professional-grade trading tools.</li>
+<li>Execute trades on a secure and reliably built platform.</li>
             </ul>
           </div>
         </div>

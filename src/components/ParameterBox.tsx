@@ -10,9 +10,9 @@ const ParameterBox: React.FC<ParameterBoxProps> = ({ kpi }) => {
   const getTrendIcon = () => {
     switch (kpi.trend) {
       case 'up':
-        return '↗️';
+        return '↗';
       case 'down':
-        return '↘️';
+        return '↘';
       case 'stable':
         return '→';
       default:
@@ -23,13 +23,13 @@ const ParameterBox: React.FC<ParameterBoxProps> = ({ kpi }) => {
   const getTrendColor = () => {
     switch (kpi.trend) {
       case 'up':
-        return '#10B981';
+        return '#000000';
       case 'down':
-        return '#EF4444';
+        return '#000000';
       case 'stable':
-        return '#6B7280';
+        return '#000000';
       default:
-        return '#6B7280';
+        return '#000000';
     }
   };
 
